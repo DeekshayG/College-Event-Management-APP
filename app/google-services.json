@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "38518935125",
+    "firebase_url": "https://collegeeventmanagementap-6912a-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "collegeeventmanagementap-6912a",
+    "storage_bucket": "collegeeventmanagementap-6912a.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:38518935125:android:edf901504e894442490edc",
+        "android_client_info": {
+          "package_name": "com.example.collegeeventapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBZnohzMxGDSiQrAQqvj1AtQPfnNFveg6o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
