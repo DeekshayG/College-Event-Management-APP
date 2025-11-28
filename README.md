@@ -49,14 +49,14 @@ Users can **add, view, edit, and delete** events with image support.
 
 ## 📁 Project Structure
 
-|/com.example.collegeeventapp|
-|├── MainActivity.kt|
-|├── HomeScreen.kt|
-|├── AddEventScreen.kt|
-|├── DetailEventScreen.kt|
-|├── EditEventScreen.kt|
-|├── Event.kt|
-|└── ui/theme/*|
+/com.example.collegeeventapp
+├── MainActivity.kt
+├── HomeScreen.kt
+├── AddEventScreen.kt
+├── DetailEventScreen.kt
+├── EditEventScreen.kt
+├── Event.kt
+└── ui/theme/*
 
 
 ---
