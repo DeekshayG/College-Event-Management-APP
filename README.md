@@ -1,71 +1,79 @@
-🎓 College Event Management App
+# 🎓 College Event Management App
 
-A simple Android app built using Jetpack Compose and Firebase Realtime Database for managing college events.
-This app allows users to add, view, edit, and delete events with an image preview.
+A simple Android app built using **Jetpack Compose** and **Firebase Realtime Database** for managing college events.  
+Users can **add, view, edit, and delete** events with image support.
 
-⭐ Features
+---
 
-📌 Add Event
-       Enter event name
-       Enter date
-       Add description
-       Add an image URL
-       Save directly to Firebase
+## ⭐ Features
 
-📌 View Events (Home Screen)
-       All events shown in a list
-       Each card displays:
-       Event name
-       Date
-       Event image
-       Click any event to open detailed view
+### 📌 Add Event
+- Add event name  
+- Select date  
+- Add description  
+- Add image URL  
+- Save directly to Firebase
 
-📌 Event Details Page
-       Shows full event information
-       Displays image in full width
-       Options:
-       Edit the event
-       Delete the event
+### 📌 View Events
+- List of all events  
+- Each event card shows:
+  - Image  
+  - Name  
+  - Date  
+- Click any event to view full details
 
-📌 Edit Event
-       Edit all fields of an existing event
-       Saves back to Firebase
+### 📌 Event Detail Page
+- Full image preview  
+- Event name, date, and description  
+- Buttons to:
+  - **Edit event**
+  - **Delete event**
 
-🛠️ Technologies Used
+### 📌 Edit Event
+- Update all event fields  
+- Save changes to Firebase
 
-Area	                          Technology
-UI -----------------------Jetpack Compose + Material 3
-Image --------------------Loading	Coil
-Database------------------Firebase Realtime Database
-Language	-----------------Kotlin
-Architecture--------------Simple - State management using remember & LaunchedEffect
+---
+
+## 🛠️ Technologies Used
+
+| Component | Technology |
+|----------|------------|
+| UI | Jetpack Compose + Material 3 |
+| Database | Firebase Realtime Database |
+| Language | Kotlin |
+| Image Loading | Coil |
+| Navigation | Jetpack Navigation Compose |
+
+---
+
+## 📁 Project Structure
+
+|/com.example.collegeeventapp|
+|├── MainActivity.kt|
+|├── HomeScreen.kt|
+|├── AddEventScreen.kt|
+|├── DetailEventScreen.kt|
+|├── EditEventScreen.kt|
+|├── Event.kt|
+|└── ui/theme/*|
 
 
-📁 Project Files
+---
 
-/com.example.collegeeventapp
- ├── MainActivity.kt
- ├── HomeScreen.kt
- ├── AddEventScreen.kt
- ├── DetailEventScreen.kt
- ├── EditEventScreen.kt
- ├── Event.kt
- └── ui/theme/*
- 
+## ⚙️ How It Works
 
-⚙️ How the App Works
+### 1⃣ Add Event  
+Form input → Generate ID → Upload to Firebase.
 
-📝 Add Event
-User enters details → App generates an ID → Saves to Firebase.
+### 2⃣ Home List  
+Fetch all events → Display in a LazyColumn list.
 
-📖 View Events
-App loads all events from Firebase and displays them in a list.
+### 3⃣ Detail Page  
+Shows event information + mini toolbar with Edit & Delete options.
 
-🔍 Detail Page
-Shows image, title, date, description + options to edit or delete.
+### 4⃣ Edit Event  
+Load event → User edits → Update Firebase.
 
-✏ Edit Event
-Loads existing data → user updates → saves changes to Firebase.
-
-❌ Delete Event
-Removes event from Firebase instantly.
+### 5⃣ Delete Event  
+Removes event instantly from Firebase.
